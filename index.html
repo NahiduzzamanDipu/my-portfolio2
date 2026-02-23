@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     
+     
     <script>
         tailwind.config = {
             theme: {
@@ -220,6 +221,22 @@
             border: 1px solid rgba(0, 0, 0, 0); 
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
         }
+		
+		/* ML Module specific styling */
+        .ml-pillar {
+            border-left: 2px solid #00FFC0;
+            padding-left: 1.5rem;
+        }
+
+        /* Kaggle Specific Button Gradient */
+        .kaggle-btn {
+            background: linear-gradient(135deg, #20BEFF 0%, #0085FF 100%);
+            transition: all 0.3s ease;
+        }
+        .kaggle-btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 20px -5px rgba(32, 190, 255, 0.4);
+        }
     </style>
 </head>
 
@@ -234,6 +251,7 @@
             <nav class="hidden md:flex space-x-8 font-medium">
                 <a href="#about" class="text-subtle-text hover:text-primary transition duration-300">About</a>
                 <a href="#skills" class="text-subtle-text hover:text-primary transition duration-300">Skills</a>
+                <a href="#ML_Roadmap" class="text-subtle-text hover:text-primary transition duration-300">ML Roadmap</a>
                 <a href="#projects" class="text-subtle-text hover:text-primary transition duration-300">Projects</a>
                 <a href="#experience" class="text-subtle-text hover:text-primary transition duration-300">Education</a>
                 <a href="#contact" class="text-subtle-text hover:text-primary transition duration-300">Contact</a>
@@ -246,6 +264,7 @@
             <nav class="flex flex-col p-4 space-y-2">
                 <a href="#about" class="py-2 text-dark-text hover:text-primary transition duration-300">About</a>
                 <a href="#skills" class="py-2 text-dark-text hover:text-primary transition duration-300">Skills</a>
+                <a href="#ML_Roadmap" class="text-subtle-text hover:text-primary transition duration-300">ML Roadmap</a>
                 <a href="#projects" class="py-2 text-dark-text hover:text-primary transition duration-300">Projects</a>
                 <a href="#experience" class="py-2 text-dark-text hover:text-primary transition duration-300">Education</a>
                 <a href="#contact" class="py-2 text-dark-text hover:text-primary transition duration-300">Contact</a>
@@ -259,9 +278,9 @@
                 
                 <div class="md:col-span-4 flex justify-center mb-10 md:mb-0">
                     <div class="relative w-56 h-56">
-                        <!-- Replaced local dp.png with a guaranteed working placeholder -->
+                        <!-- Replaced local image/dp.png with a guaranteed working placeholder -->
                         <img 
-                            src="dp.png" 
+                            src="image/dp.png" 
                             alt="MD Nahiduzzaman Dipu's Profile Picture"
                             class="w-full h-full object-cover border-4 border-primary shadow-2xl clip-hexagon animate-float"
                             width="224"
@@ -397,6 +416,159 @@
                         </div>
                     </div>
                 </div>
+				
+				        <!-- Machine Learning Roadmap (Detailed) -->
+        
+        <!-- Skills Section -->
+        <section id="ML_Roadmap" class="py-16 md:py-32 border-t border-gray-800">
+            <div class="text-center mb-16">
+                <h2 class="section-title center-style text-3xl sm:text-4xl font-bold text-white">Machine Learning Mastery</h2>
+                <p class="text-subtle-text mt-4 max-w-2xl mx-auto">Deep dive into my technical capabilities across the AI & Data Science lifecycle.</p>
+            </div>
+
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                
+                <!-- Pillar 1: Core Python & Advanced Concepts -->
+                <div class="ml-pillar">
+                    <h3 class="text-xl font-bold text-white mb-4 flex items-center">
+                        <span class="mr-2">🐍</span> Python & Core Programming
+                    </h3>
+                    <div class="space-y-4 text-sm text-subtle-text">
+                        <div class="professional-card p-4 rounded-lg">
+                            <p class="text-primary font-semibold mb-2">Fundamentals & Structures</p>
+                            <p>Expertise in Python Data Structures (Lists, Tuples, Sets, Dictionaries), Implicit type conversion, and Logic Flow (Control Statements & Loops).</p>
+                        </div>
+                        <div class="professional-card p-4 rounded-lg">
+                            <p class="text-primary font-semibold mb-2">Advanced Functional & OOP</p>
+                            <p>Lambda, Map, Filter, Reduce, Decorators, and Generators. Full OOP implementation including Inheritance, Polymorphism, and Encapsulation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pillar 2: Data Analysis & Visualization -->
+                <div class="ml-pillar">
+                    <h3 class="text-xl font-bold text-white mb-4 flex items-center">
+                        <span class="mr-2">📊</span> Data Engineering & Analytics
+                    </h3>
+                    <div class="space-y-4 text-sm text-subtle-text">
+                        <div class="professional-card p-4 rounded-lg">
+                            <p class="text-primary font-semibold mb-2">The Data Stack (NumPy & Pandas)</p>
+                            <p>Multidimensional arrays, Broadcasting, DataFrames, Missing Value handling, and complex Joins/Merges for large-scale data manipulation.</p>
+                        </div>
+                        <div class="professional-card p-4 rounded-lg">
+                            <p class="text-primary font-semibold mb-2">Visualization & Stats</p>
+                            <p>Advanced plotting with Matplotlib & Seaborn (Multivariate analysis, Boxplots). Foundation in Statistics: Mean/Variance, Analytics types (Nominal to Ratio).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pillar 3: ML Pipeline & NLP -->
+                <div class="ml-pillar">
+                    <h3 class="text-xl font-bold text-white mb-4 flex items-center">
+                        <span class="mr-2">🧠</span> ML Pipeline & NLP
+                    </h3>
+                    <div class="space-y-4 text-sm text-subtle-text">
+                        <div class="professional-card p-4 rounded-lg">
+                            <p class="text-primary font-semibold mb-2">Pre-processing & Reduction</p>
+                            <p>Standardization, Normalization, Label Encoding, and Dimensionality Reduction (PCA) using Eigenvalues/Eigenvectors.</p>
+                        </div>
+                        <div class="professional-card p-4 rounded-lg">
+                            <p class="text-primary font-semibold mb-2">Natural Language Processing</p>
+                            <p>Text cleaning, Stemming, Lemmatization, and Vectorization techniques like BoW and TF-IDF.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pillar 4: Algorithms & Deployment -->
+                <div class="ml-pillar">
+                    <h3 class="text-xl font-bold text-white mb-4 flex items-center">
+                        <span class="mr-2">🚀</span> Algorithms & Deployment
+                    </h3>
+                    <div class="space-y-4 text-sm text-subtle-text">
+                        <div class="professional-card p-4 rounded-lg">
+                            <p class="text-primary font-semibold mb-2">Modeling Suite</p>
+                            <p>Proficient in KNN, Naïve Bayes, Logistic/Linear Regression, Decision Trees, Random Forest, XGBoost, and K-Means Clustering.</p>
+                        </div>
+                        <div class="professional-card p-4 rounded-lg">
+                            <p class="text-primary font-semibold mb-2">Production & Cloud</p>
+                            <p>Building RESTful APIs for models using Flask (GET/POST), testing with Postman, and deploying to Heroku for real-world usage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ML Tech Stack Chips -->
+            <div class="mt-16 flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
+                <span class="tech-pill px-4 py-2 border-primary/30 text-white">NumPy</span>
+                <span class="tech-pill px-4 py-2 border-primary/30 text-white">Pandas</span>
+                <span class="tech-pill px-4 py-2 border-primary/30 text-white">Scikit-Learn</span>
+                <span class="tech-pill px-4 py-2 border-primary/30 text-white">TensorFlow</span>
+                <span class="tech-pill px-4 py-2 border-primary/30 text-white">Flask</span>
+                <span class="tech-pill px-4 py-2 border-primary/30 text-white">spaCy</span>
+                <span class="tech-pill px-4 py-2 border-primary/30 text-white">XGBoost</span>
+                <span class="tech-pill px-4 py-2 border-primary/30 text-white">EDA</span>
+                <span class="tech-pill px-4 py-2 border-primary/30 text-white">PCA</span>
+            </div>
+        </section>
+
+        
+        <!-- Kaggle Section -->
+        <section id="kaggle" class="py-12 border-t border-gray-800">
+            <div class="max-w-4xl mx-auto px-4">
+                <div class="professional-card rounded-2xl p-5 sm:p-8 relative overflow-hidden group">
+                    <!-- Background Glow Effect -->
+                    <div class="absolute -right-20 -top-20 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl group-hover:bg-blue-500/20 transition-all duration-500"></div>
+                    
+                    <div class="flex flex-col md:flex-row items-center gap-3 md:gap-8 relative z-10">
+                        
+                        <!-- Header for Mobile: Both icons in a centered row -->
+                        <div class="flex flex-row justify-center items-center gap-4 w-full md:hidden">
+                             <!-- Kaggle Logo Mobile -->
+                             <div class="w-16 h-16 bg-white/5 rounded-xl flex items-center justify-center border border-white/10 group-hover:border-blue-400/40">
+                                <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.825 23.859c-.022.094-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.055c-.235 0-.352-.117-.352-.352V.352c0-.235.117-.352.352-.352h2.883c.234 0 .351.117.351.352v13.804l6.209-6.162c.117-.117.246-.176.387-.176h3.391c.234 0 .339.106.316.316L12.402 14.19l6.423 9.352c.047.071.047.141 0 .317z" fill="#20BEFF"/>
+                                </svg>
+                             </div>
+                             <!-- Profile Pic Mobile -->
+                             <div class="w-16 h-16 bg-white/5 rounded-xl overflow-hidden border border-white/10 group-hover:border-primary/40">
+                                <img src="image/dp.png" alt="Profile" class="w-full h-full object-cover">
+                             </div>
+                        </div>
+
+                        <!-- Desktop Left Logo (hidden on mobile) -->
+                        <div class="hidden md:flex flex-shrink-0">
+                            <div class="w-28 h-28 lg:w-32 lg:h-32 bg-white/5 rounded-2xl flex items-center justify-center border border-white/10 group-hover:border-blue-400/50 transition-all duration-300">
+                                <svg class="w-16 h-16 lg:w-20 lg:h-20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.825 23.859c-.022.094-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.055c-.235 0-.352-.117-.352-.352V.352c0-.235.117-.352.352-.352h2.883c.234 0 .351.117.351.352v13.804l6.209-6.162c.117-.117.246-.176.387-.176h3.391c.234 0 .339.106.316.316L12.402 14.19l6.423 9.352c.047.071.047.141 0 .317z" fill="#20BEFF"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Main Content -->
+                        <div class="flex-grow text-center md:text-left">
+                            <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-1.5 md:mb-2">Explore My Kaggle Journey</h2>
+                            <p class="text-subtle-text text-sm sm:text-base mb-4 leading-relaxed max-w-2xl mx-auto md:mx-0">
+                                I actively participate in data science competitions and share insights through open-source notebooks. Follow my progress in the world's largest data science community.
+                            </p>
+                            <div class="flex justify-center md:justify-start">
+                                <a href="https://www.kaggle.com/nahiduzzamandipu" target="_blank" class="kaggle-btn px-6 py-2.5 sm:px-8 sm:py-3 rounded-xl font-bold text-white flex items-center gap-2 text-sm sm:text-base">
+                                    <span>Visit My Kaggle Profile</span>
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Desktop Right DP (hidden on mobile) -->
+                        <div class="hidden md:flex flex-shrink-0">
+                            <div class="w-28 h-28 lg:w-32 lg:h-32 bg-white/5 rounded-2xl overflow-hidden border border-white/10 group-hover:border-primary/50 transition-all duration-300">
+                                <img src="image/dp.png" alt="Nahiduzzaman Profile" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
             
                 <div>
                     <h3 class="text-xl sm:text-2xl font-semibold text-white mb-6 text-center">📈 Digital Marketing</h3>
@@ -708,9 +880,10 @@
                     <h5 class="text-base sm:text-lg font-semibold text-white mb-4">Quick Links</h5>
                     <ul class="space-y-2">
                         <li><a href="#about" class="text-subtle-text hover:text-primary transition-colors text-sm">About Me</a></li>
+                        <li><a href="#skills" class="text-subtle-text hover:text-primary transition-colors text-sm">Skills</a></li>
+                        <li><a href="#ML_Roadmap" class="text-subtle-text hover:text-primary transition-colors text-sm">ML Roadmap</a></li>
                         <li><a href="#projects" class="text-subtle-text hover:text-primary transition-colors text-sm">Projects</a></li>
                         <li><a href="#experience" class="text-subtle-text hover:text-primary transition-colors text-sm">Education</a></li>
-                        <li><a href="#skills" class="text-subtle-text hover:text-primary transition-colors text-sm">Skills</a></li>
                     </ul>
                 </div>
                 <div class="space-y-2">
@@ -734,6 +907,15 @@
                                 <span>GitHub</span>
                             </a>
                         </li>
+						<li>
+							<a href="https://www.kaggle.com/nahiduzzamandipu" target="_blank" title="Kaggle"
+							   class="text-subtle-text hover:text-primary transition-colors flex items-center space-x-2 text-sm">
+								<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+									<path d="M18.825 23.859c-.022.028-.118.141-.253.141h-2.262c-.186 0-.317-.051-.434-.17l-8.042-8.03-2.812 2.76v5.146c0 .176-.117.294-.294.294H2.438c-.177 0-.294-.118-.294-.294V.147c0-.176.117-.294.294-.294h2.29c.177 0 .294.118.294.294v12.57l2.393-2.443L15.29.147c.107-.131.233-.147.375-.147h2.386c.135 0 .248.113.253.141.008.03.015.114-.04.212l-7.15 7.08 7.702 16.195c.053.111.053.199.01.234z"/>
+								</svg>
+								<span>Kaggle</span>
+							</a>
+						</li>
                         <li>
                             <a href="https://www.facebook.com/md.nahiduzzaman.dipu" target="_blank" title="Facebook"
                                class="text-subtle-text hover:text-primary transition-colors flex items-center space-x-2 text-sm">
@@ -804,8 +986,8 @@
             <div class="p-6 sm:p-8 pt-0 overflow-y-auto flex-1">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                     <!-- Image 1 -->
-                    <a href="Hoodie1.jpg" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
-                        <img src="Hoodie1.jpg"
+                    <a href="image/Hoodie1.jpg" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
+                        <img src="image/Hoodie1.jpg"
                             alt="Hoodie Design Mockup"
                             loading="lazy"
                             decoding="async"
@@ -813,8 +995,8 @@
                     </a>
                     
                     <!-- Image 2 -->
-                    <a href="jersey1.jpg" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
-                        <img src="jersey1.jpg"
+                    <a href="image/jersey1.jpg" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
+                        <img src="image/jersey1.jpg"
                             alt="Jersey Design 1"
                             loading="lazy"
                             decoding="async"
@@ -822,8 +1004,8 @@
                     </a>
 
                     <!-- Image 3 -->
-                    <a href="jersey2.jpg" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
-                        <img src="jersey2.jpg"
+                    <a href="image/jersey2.jpg" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
+                        <img src="image/jersey2.jpg"
                             alt="Abstract T-shirt Design"
                             loading="lazy"
                             decoding="async"
@@ -831,8 +1013,8 @@
                     </a>
                     
                     <!-- Image 4 -->
-                    <a href="jersey3.jpg" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
-                        <img src="jersey3.jpg"
+                    <a href="image/jersey3.jpg" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
+                        <img src="image/jersey3.jpg"
                             alt="Sports Event Design"
                             loading="lazy"
                             decoding="async"
@@ -840,8 +1022,8 @@
                     </a>
                     
                     <!-- Image 5 -->
-                    <a href="jersey4.jpg" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
-                        <img src="jersey4.jpg"
+                    <a href="image/jersey4.jpg" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
+                        <img src="image/jersey4.jpg"
                             alt="Typography Based Design"
                             loading="lazy"
                             decoding="async"
@@ -849,8 +1031,8 @@
                     </a>
                     
                     <!-- Image 6 -->
-                    <a href="jersey5.jpg" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
-                        <img src="jersey5.jpg"
+                    <a href="image/jersey5.jpg" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
+                        <img src="image/jersey5.jpg"
                             alt="General Graphics Art"
                             loading="lazy"
                             decoding="async"
@@ -858,8 +1040,8 @@
                     </a>
                     
                     <!-- Image 7 -->
-                    <a href="jersey6.jpg" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
-                        <img src="jersey6.jpg"
+                    <a href="image/jersey6.jpg" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
+                        <img src="image/jersey6.jpg"
                             alt="Event T-shirt Mockup"
                             loading="lazy"
                             decoding="async"
@@ -898,8 +1080,8 @@
             <div class="p-6 sm:p-8 pt-0 overflow-y-auto flex-1">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                     <!-- Image 1 -->
-                    <a href="P1.PNG" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
-                        <img src="P1.PNG"
+                    <a href="image/P1.PNG" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
+                        <img src="image/P1.PNG"
                             alt="Campaign Overview Report"
                             loading="lazy"
                             decoding="async"
@@ -907,8 +1089,8 @@
                     </a>
                     
                     <!-- Image 2 -->
-                    <a href="P2.PNG" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
-                        <img src="P2.PNG"
+                    <a href="image/P2.PNG" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
+                        <img src="image/P2.PNG"
                             alt="Audience Targeting Setup Screenshot"
                             loading="lazy"
                             decoding="async"
@@ -916,8 +1098,8 @@
                     </a>
 
                     <!-- Image 3 -->
-                    <a href="P3.PNG" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
-                        <img src="P3.PNG"
+                    <a href="image/P3.PNG" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
+                        <img src="image/P3.PNG"
                             alt="Ad Creatives Mockup"
                             loading="lazy"
                             decoding="async"
@@ -925,8 +1107,8 @@
                     </a>
 
                     <!-- Image 4 -->
-                    <a href="P4.PNG" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
-                        <img src="P4.PNG"
+                    <a href="image/P4.PNG" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
+                        <img src="image/P4.PNG"
                             alt="Conversion Rates Analysis"
                             loading="lazy"
                             decoding="async"
@@ -934,8 +1116,8 @@
                     </a>
                     
                     <!-- Image 5 -->
-                    <a href="P5.PNG" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
-                        <img src="P5.PNG"
+                    <a href="image/P5.PNG" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
+                        <img src="image/P5.PNG"
                             alt="Budget Allocation Strategy"
                             loading="lazy"
                             decoding="async"
@@ -943,8 +1125,8 @@
                     </a>
                     
                     <!-- Image 6 -->
-                    <a href="P6.PNG" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
-                        <img src="P6.PNG"
+                    <a href="image/P6.PNG" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
+                        <img src="image/P6.PNG"
                             alt="A/B Test Results Summary"
                             loading="lazy"
                             decoding="async"
@@ -952,8 +1134,8 @@
                     </a>
 
                     <!-- Image 7 -->
-                    <a href="P7.PNG" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
-                        <img src="P7.PNG"
+                    <a href="image/P7.PNG" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
+                        <img src="image/P7.PNG"
                             alt="Key Performance Indicators Dashboard"
                             loading="lazy"
                             decoding="async"
@@ -961,8 +1143,8 @@
                     </a>
                     
                     <!-- Image 8 -->
-                    <a href="P8.PNG" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
-                        <img src="P8.PNG"
+                    <a href="image/P8.PNG" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
+                        <img src="image/P8.PNG"
                             alt="Retargeting Strategy Flowchart"
                             loading="lazy"
                             decoding="async"
@@ -970,8 +1152,8 @@
                     </a>
 
                     <!-- Image 9 -->
-                    <a href="P9.PNG" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
-                        <img src="P9.PNG"
+                    <a href="image/P9.PNG" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
+                        <img src="image/P9.PNG"
                             alt="Geographic Performance Report"
                             loading="lazy"
                             decoding="async"
@@ -979,8 +1161,8 @@
                     </a>
 
                     <!-- Image 10 -->
-                    <a href="P10.PNG" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
-                        <img src="P10.PNG"
+                    <a href="image/P10.PNG" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
+                        <img src="image/P10.PNG"
                             alt="Cost Per Acquisition Optimization Chart"
                             loading="lazy"
                             decoding="async"
@@ -988,8 +1170,8 @@
                     </a>
                     
                     <!-- Image 11 -->
-                    <a href="P11.PNG" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
-                        <img src="P11.PNG"
+                    <a href="image/P11.PNG" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
+                        <img src="image/P11.PNG"
                             alt="Ad Set Breakdown Table"
                             loading="lazy"
                             decoding="async"
@@ -997,8 +1179,8 @@
                     </a>
                     
                     <!-- Image 12 -->
-                    <a href="P12.PNG" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
-                        <img src="P12.PNG"
+                    <a href="image/P12.PNG" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
+                        <img src="image/P12.PNG"
                             alt="Monthly Performance Summary"
                             loading="lazy"
                             decoding="async"
@@ -1006,8 +1188,8 @@
                     </a>
 
                     <!-- Image 13 -->
-                    <a href="P13.PNG" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
-                        <img src="P13.PNG"
+                    <a href="image/P13.PNG" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
+                        <img src="image/P13.PNG"
                             alt="Campaign Funnel Flow"
                             loading="lazy"
                             decoding="async"
@@ -1015,8 +1197,8 @@
                     </a>
                     
                     <!-- Image 14 -->
-                    <a href="P14.JPG" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
-                        <img src="P14.JPG"
+                    <a href="image/P14.JPG" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
+                        <img src="image/P14.JPG"
                             alt="Custom Audience Definition"
                             loading="lazy"
                             decoding="async"
@@ -1024,8 +1206,8 @@
                     </a>
                     
                     <!-- Image 15 -->
-                    <a href="P15.JPG" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
-                        <img src="P15.JPG"
+                    <a href="image/P15.JPG" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
+                        <img src="image/P15.JPG"
                             alt="Lookalike Modeling Process"
                             loading="lazy"
                             decoding="async"
@@ -1033,8 +1215,8 @@
                     </a>
 
                     <!-- Image 16 (Placeholder for P18.jpg) -->
-                    <a href="P188.jpg" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
-                        <img src="P188.jpg"
+                    <a href="image/P188.jpg" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
+                        <img src="image/P188.jpg"
                             alt="Lead Form Example"
                             loading="lazy"
                             decoding="async"
@@ -1042,8 +1224,8 @@
                     </a>
                     
                     <!-- Image 17 (Placeholder for P19.jpg) -->
-                    <a href="P199.jpg" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
-                        <img src="P199.jpg"
+                    <a href="image/P199.jpg" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
+                        <img src="image/P199.jpg"
                             alt="Conversion Tracking Setup"
                             loading="lazy"
                             decoding="async"
@@ -1051,8 +1233,8 @@
                     </a>
                     
                     <!-- Image 18 (Placeholder for P20.jpg) -->
-                    <a href="P200.jpg" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
-                        <img src="P200.jpg"
+                    <a href="image/P200.jpg" target="_blank" class="block w-full h-48 sm:h-56 md:h-48 lg:h-56 overflow-hidden rounded-lg shadow-lg group">
+                        <img src="image/P200.jpg"
                             alt="Meta Pixel Integration"
                             loading="lazy"
                             decoding="async"
@@ -1535,5 +1717,4 @@
 
     </script>
 </body>
-
 </html>
